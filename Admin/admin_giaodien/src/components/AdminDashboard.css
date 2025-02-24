@@ -1,0 +1,44 @@
+/* Style cho logo trong thanh bên */
+.logo {
+  height: 64px;
+  margin: 16px;
+  text-align: center;
+}
+
+.logo img {
+  max-height: 100%;
+  max-width: 100%;
+  transition: max-width 0.3s; /* Hiệu ứng mượt khi thu gọn */
+}
+
+/* Khi thanh bên thu gọn, giảm kích thước logo */
+.ant-layout-sider-collapsed .logo img {
+  max-width: 40px;
+}
+
+/* Nền trắng cho các khu vực chính */
+.site-layout-background {
+  background: #fff;
+}
+
+/* Style cho Content */
+.site-layout-background {
+  margin: 24px 16px;
+  padding: 24px;
+}
+
+/* Style cho Header */
+.ant-layout-header {
+  padding: 0;
+  background: #fff;
+}
+
+/* Hover effect cho các mục menu trong thanh bên */
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #1f1f1f; /* Màu tối hơn khi hover */
+}
+
+/* Đảm bảo layout chiếm toàn bộ chiều cao */
+.ant-layout {
+  min-height: 100vh;
+}
